@@ -1,0 +1,42 @@
+/* Definición de colores */
+/* Definición de clases de color */
+.color-rosa-claro {
+    background-color: #F4C4CF;
+}
+
+.color-rosa-fuerte {
+    background-color: #E88B9C;
+}
+
+.color-durazno {
+    background-color: #D4A373;
+}
+
+.color-cafe-oscuro {
+    background-color: #3A2C2B;
+}
+
+.color-blanco {
+    background-color: #FFFFFF;
+}
+
+/* Clases para el color de texto */
+.texto-rosa-claro {
+    color: #F4C4CF;
+}
+
+.texto-rosa-fuerte {
+    color: #E88B9C;
+}
+
+.texto-durazno {
+    color: #D4A373;
+}
+
+.texto-cafe-oscuro {
+    color: #3A2C2B;
+}
+
+.texto-blanco {
+    color: #FFFFFF;
+}

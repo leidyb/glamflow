@@ -1,0 +1,23 @@
+{% load django_bootstrap5 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlamFlow - {{ titulo }}</title>
+    {% bootstrap_css %}
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="shortcut icon" href="{% static 'img/Logo.png' %}" />
+  </head>
+  <body class="color-rosa-claro">
+    {% include 'partials/header.html' %}
+
+    {% block contenido %}
+
+    {% endblock %}
+    {% include 'partials/footer.html' %}
+    {% bootstrap_javascript %}
+  </body>
+</html>
