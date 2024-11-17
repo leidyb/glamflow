@@ -23,11 +23,7 @@ class Usuario(models.Model):
     tipo_documento = models.CharField(max_length=2, choices=TipoDocumento.choices, verbose_name="Tipo de Documento")
     documento = models.PositiveIntegerField(verbose_name="Documento", unique=True)
     
-    class TipoUsuario(models.TextChoices):
-        CLIENTE = 'Cliente', _("Cliente")
-        EMPRENDEDORA = 'Emprendedora', _("Emprendedora")
-        ADMINISTRADOR = 'Administrador', _("Administrador")
-    tipo_usuario = models.CharField(max_length=15, choices=TipoUsuario.choices, verbose_name="Tipo de Usuario", default=TipoUsuario.CLIENTE)
+    
     
     telefono = models.CharField(max_length=15, verbose_name="Teléfono", blank=True, null=True)
     direccion = models.CharField(max_length=255, verbose_name="Dirección", blank=True, null=True)
